@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Recommendations for {{ title }}</title>
+    <title>Recommendations for {{ movie_name }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Recommendations for {{ title }}</h1>
+    <h1>Recommendations for {{ movie_name }}</h1>
     <ul>
         {% for movie in recommendations %}
         <li>{{ movie }}</li>
