@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Movie Recommendation System</h1>
+    <form action="/recommend" method="post">
+        <label for="title">Enter Movie Title:</label>
+        <input type="text" id="title" name="title">
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>

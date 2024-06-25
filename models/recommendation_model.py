@@ -14,7 +14,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 #loading the data from csv file to a pandas dataframe
-movies_data = pd.read_csv('movies.csv')
+movies_data = pd.read_csv('data/movies.csv')
 
 #printing the first 5 rows of the dataset
 movies_data.head()
