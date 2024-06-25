@@ -1,7 +1,7 @@
 # app.py
 
 from flask import Flask, render_template, request
-from models.recommendation_model import recommend_movies
+from models.recommendations_model import recommend_movies
 
 app = Flask(__name__)
 
