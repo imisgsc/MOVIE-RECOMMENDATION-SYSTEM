@@ -6,12 +6,25 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Recommendations for {{ movie_name }}</h1>
-    <ul>
-        {% for movie in recommendations %}
-        <li>{{ movie }}</li>
-        {% endfor %}
-    </ul>
-    <a href="/" class="goback">Go Back</a>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Recommendations for {{ movie_name }}</h1>
+            </div>
+        </nav>
+    </header>
+    <section class="movie-section">
+        <div class="container">
+            <ul class="movie-list">
+                {% for movie in recommendations %}
+                <li>
+                    <div>
+                        <span class="movie-title">{{ movie }}</span>                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <a href="/" class="goback">Go Back</a>
+        </div>
+    </section>
 </body>
 </html>
