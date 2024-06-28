@@ -1,62 +1,78 @@
-/* General styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #141414; /* Dark background color similar to Netflix */
-    color: #fff;
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3 {
-    color: #fff; /* White color for headers */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
 }
 
-a {
-    color: #e50914; /* Netflix red color for links */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Styles specific to index.html */
-form {
-    margin-top: 50px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
     text-align: center;
 }
 
-label, input, button {
-    display: block;
-    margin: 10px auto;
+header h1 {
+    font-size: 2rem;
 }
 
-input[type="text"], button {
-    padding: 12px 20px;
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.search-section input[type="text"] {
+    padding: 10px;
     width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
     border: none;
-    background-color: #fff; /* White background for input and button */
-    color: #000; /* Black text color */
-    font-size: 16px;
-    border-radius: 3px;
-}
-
-button {
+    border-radius: 4px;
     cursor: pointer;
-    background-color: #e50914; /* Netflix red for button */
-    color: #fff; /* White text color */
-    border: 1px solid transparent;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #ff3f30; /* Lighter shade of red on hover */
+.search-section button:hover {
+    background-color: #555;
 }
 
-/* Styles specific to recommendations.html */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.movie-section {
+    padding: 50px 0;
 }
 
 .movie-list {
@@ -66,10 +82,28 @@ button:hover {
 
 .movie-list li {
     margin-bottom: 15px;
-    display: flex;
-    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
 .movie-title {
-    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.goback {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.goback:hover {
+    background-color: #555;
 }
