@@ -7,9 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f0f0f0;
     line-height: 1.6;
-    color: #343a40; /* Dark text color */
 }
 
 .container {
@@ -18,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #007bff; /* Blue header */
+    background-color: #001E6C; /* Primary blue */
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -34,7 +33,7 @@ nav {
 }
 
 nav a {
-    color: #007bff; /* Blue links */
+    color: #fff;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.2rem;
@@ -53,23 +52,24 @@ nav a:hover {
     padding: 10px;
     width: 300px;
     font-size: 1rem;
-    border: 1px solid #ced4da; /* Light gray border */
+    border: 1px solid #035397; /* Darker blue */
     border-radius: 4px;
     margin-right: 10px;
 }
 
 .search-section button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff; /* Blue button */
+    padding: 12px 24px; /* Increased padding for button */
+    font-size: 1.1rem; /* Slightly larger font size */
+    background-color: #035397; /* Darker blue */
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .search-section button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #001E6C; /* Darken primary blue on hover */
 }
 
 .movie-section {
@@ -82,29 +82,30 @@ nav a:hover {
 }
 
 .movie-list li {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Increased margin */
     background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Increased padding */
 }
 
 .movie-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Slightly larger font size */
     font-weight: bold;
-    color: #343a40; /* Dark text color */
+    color: #001E6C; /* Primary blue */
 }
 
 .goback {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px; /* Increased top margin */
     text-decoration: none;
-    padding: 10px 20px;
-    background-color: #007bff; /* Blue button */
+    padding: 12px 24px; /* Increased padding */
+    background-color: #FFAA4C; /* Yellow */
     color: #fff;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .goback:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #FFD166; /* Lighter yellow on hover */
 }
